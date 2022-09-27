@@ -8,7 +8,9 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>viktor</title>
+    <title>
+      viktor
+    </title>
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
@@ -20,31 +22,31 @@
 
 
           <input
-           autocomplete="off"
-           type="text"
-           id="surname"
-           required
+            autocomplete="off"
+            type="text"
+            id="surname"
+            required
           >
         </label>
 
         <label class="form-field" for="name">
           Name:
           <input
-           autocomplete="off"
-           type="text"
-           id="name"
-           required
+            autocomplete="off"
+            type="text"
+            id="name"
+            required
           >
         </label>
 
         <label class="form-field" for="age">
           How old are You?
           <input
-           type="number"
-           id="age"
-           min="1"
-           max="110"
-           value="12"
+            type="number"
+            id="age"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
 
@@ -57,12 +59,12 @@
         </label>
 
         <label class="form-field" for="terms">
-          I accept the term of the areement
+          I accept the term of the agreement
           <input
             type="checkbox"
             id="terms"
             required
-        >
+          >
         </label>
       </fieldset>
 
@@ -75,14 +77,16 @@
             id="email"
             placeholder="email@example.com"
             required
-         >
+          >
         </label>
 
         <label for="password">
-        Password:
+          Password:
           <input
            type="password"
            id="password"
+           minlength="8"
+           maxlength="16"
            required
           >
         </label>
@@ -92,7 +96,7 @@
         <legend>An interesting fact about you!</legend>
 
         <label class="form-field">
-         Do you love cats?
+          Do you love cats?
           <label>
             <input
               type="radio"
@@ -114,19 +118,23 @@
 
 
         <label class="form-field" for="color">
-        What is your favorite color? <input type="color"
-        id="color"
-        >
+          What is your favorite color?
+          <input
+            type="color"
+            id="color"
+          >
         </label>
 
         <label class="form-field" for="time">
-        What time do you go to bed? <input type="time"
-        id="time"
-        >
+          What time do you go to bed?
+          <input
+            type="time"
+            id="time"
+          >
         </label>
 
         <label class="form-field" for="car">
-        What are your favorite brand of cars?
+          What are your favorite brand of cars?
 
           <select id="car" multiple>
             <option value="BMW">BMW</option>
@@ -136,23 +144,23 @@
         </label>
 
         <label class="form-field" for="rate">
-        How do you rate our work? <input type="range"
-        id="rate"
-        min="1"
-        max="10"
-        >
+          How do you rate our work?
+          <input
+            type="range"
+            name="usersRateOfWork"
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>Addition info:</legend>
+        <legend>Additional info:</legend>
 
         <label class="form-field" for="comments">
           Comments:
 
           <textarea id="comments"
-          cols="20"
-          rows="2">
+            cols="20"
+            rows="2">
           </textarea>
         </label>
 
